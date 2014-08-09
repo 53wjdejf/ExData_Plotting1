@@ -8,6 +8,7 @@ a2$Sub_metering_2 <- as.numeric(as.character(a2$Sub_metering_2))
 a2$Sub_metering_3 <- as.numeric(as.character(a2$Sub_metering_3))
 
 png(filename = 'plot3.png', width = 480, height = 480, units = 'px')
+par(bg="transparent")
 with(a2, plot(Date, Sub_metering_1, type="l",
      xlab="", ylab="Energy sub metering"))
 with(a2, points(Date, Sub_metering_2, type="l", col="red"))

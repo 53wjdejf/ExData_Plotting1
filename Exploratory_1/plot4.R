@@ -11,7 +11,7 @@ a2$Sub_metering_2 <- as.numeric(as.character(a2$Sub_metering_2))
 a2$Sub_metering_3 <- as.numeric(as.character(a2$Sub_metering_3))
 
 png(filename = 'plot4.png', width = 480, height = 480, units = 'px')
-par(mfrow=c(2,2))
+par(mfrow=c(2,2), bg="transparent")
 with(a2, {
         plot(Date, Global_active_power, type="l",
              xlab="", ylab="Global Active Power")
